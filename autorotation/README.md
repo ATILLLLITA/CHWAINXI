@@ -21,9 +21,9 @@ sudo apt install -y git cmake build-essential qtbase5-dev libxrandr-dev libxi-de
 
 ## Building
 ```
-git clone https://github.com/GuLinux/ScreenRotator
-mkdir ScreenRotator/build
-cd ScreenRotator/build
+git clone https://github.com/ATILLLLITA/ScreenRotator.git
+mkdir build
+cd build
 cmake ..
 make all
 sudo make install
