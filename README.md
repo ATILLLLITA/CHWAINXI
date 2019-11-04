@@ -1,32 +1,35 @@
-# CHWAINXI
+# Simple Qt screen rotation manager
 
-Chuwi hi8 Manjaro linux wifi/bt/touchscreen work.
+Reads from accelerometer sensors, and rotate display according to the readings.
 
-sudo cp silead_ts.fw /lib/firmware/
+Works only in X11 for now.
 
-sudo cp -n /brcmfmac43430a0-sdio.bin /lib/firmware/brcm
+Similar to the current solution implemented in Gnome, but works on all other desktop environments as well (KDE, XFCE, etc).
 
-sudo cp -n /brcmfmac43430a0-sdio.Insyde-BayTrail.txt /lib/firmware/brcm
+## Compilation requirements
 
-sudo cp -n /brcmfmac43430a0-sdio.txt /lib/firmware/brcm
+ - cmake
+ - gcc
+ - Qt5 (with modules x11extras, sensors)
+ - xrandr
+ - XInput (Xi)
+ 
+On ubuntu, run the following command to install dependencies:
+```
+sudo apt install -y git cmake build-essential qtbase5-dev libxrandr-dev libxi-dev libqt5x11extras5-dev libqt5sensors5-dev 
+```
 
-sudo cp -n /BCM4343A0.hcd /lib/firmware/brcm
+## Building
+```
+git clone https://github.com/GuLinux/ScreenRotator
+mkdir ScreenRotator/build
+cd ScreenRotator/build
+cmake ..
+make all
+sudo make install
+```
 
+## Links
 
-git clone https://github.com/onitake/gslx680-acpi.git
+Main icon: https://www.iconfinder.com/icons/326583/orientation_rotation_screen_icon#size=256
 
-cd gslx680-acpi
-
-make
-
-sudo cp gslx680_ts_acpi.ko /lib/modules/$(uname -r)/kernel/drivers/
-
-sudo insmod ./gslx680_ts_acpi.ko
-
-sudo apt-get install xinput_calibrator
-
-xinput_calibrator
-
-plase result into
-
-sudo atom /etc/X11/xorg.conf.d/99-calibration.conf
