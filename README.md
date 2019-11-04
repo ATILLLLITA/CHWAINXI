@@ -1,1 +1,22 @@
 # CHWAINXI
+
+sudo cp silead_ts.fw /lib/firmware/
+sudo cp -n /brcmfmac43430a0-sdio.bin /lib/firmware/brcm
+sudo cp -n /brcmfmac43430a0-sdio.Insyde-BayTrail.txt /lib/firmware/brcm
+sudo cp -n /brcmfmac43430a0-sdio.txt /lib/firmware/brcm
+sudo cp -n /BCM4343A0.hcd /lib/firmware/brcm
+
+git clone https://github.com/onitake/gslx680-acpi.git
+cd gslx680-acpi
+make
+sudo cp gslx680_ts_acpi.ko /lib/modules/$(uname -r)/kernel/drivers/
+
+sudo insmod ./gslx680_ts_acpi.ko
+
+sudo apt-get install xinput_calibrator
+
+xinput_calibrator
+
+plase result into
+
+sudo atom /etc/X11/xorg.conf.d/99-calibration.conf
