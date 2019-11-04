@@ -1,5 +1,7 @@
 # CHWAINXI
 
+Chuwi hi8 Manjaro linux wifi/bt/touchscreen work.
+
 sudo cp silead_ts.fw /lib/firmware/
 
 sudo cp -n /brcmfmac43430a0-sdio.bin /lib/firmware/brcm
