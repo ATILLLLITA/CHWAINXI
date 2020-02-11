@@ -8,6 +8,7 @@ git clone https://github.com/ATILLLLITA/CHWAINXI.git
 **Touchscreen driver copy.**
 
 sudo cp silead_ts.fw /lib/firmware/
+
 **Broadcom (BT/Wi-Fi) driver copy.**
 
 sudo cp -n /brcmfmac43430a0-sdio.bin /lib/firmware/brcm
