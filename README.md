@@ -4,6 +4,7 @@
 Hardware Information |  |  |
 ---|---|---
 Touchscreen controller | gslx680 | Work
+Touchscreen  | | Work
 Audio | Realtek ALC5642 | Work
 WIFI | Broadcom BCM43430 | Work
 Bluetooth | Realtek RGN RTL8723BS | Work
