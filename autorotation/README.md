@@ -16,12 +16,13 @@ Similar to the current solution implemented in Gnome, but works on all other des
  
 On ubuntu, run the following command to install dependencies:
 ```
-sudo apt install -y git cmake build-essential qtbase5-dev libxrandr-dev libxi-dev libqt5x11extras5-dev libqt5sensors5-dev 
+sudo pacman -Sy git cmake build-essential qtbase5-dev libxrandr-dev libxi-dev libqt5x11extras5-dev libqt5sensors5-dev 
 ```
 
 ## Building
 ```
 git clone https://github.com/ATILLLLITA/ScreenRotator.git
+cd ScreenRotator
 mkdir build
 cd build
 cmake ..
