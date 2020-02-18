@@ -7,7 +7,7 @@ Touchscreen controller | gslx680 | Work
 Touchscreen  | | Work
 Audio | Realtek ALC5642 | Work
 WIFI | Broadcom BCM43430 | Work
-Bluetooth | Realtek RGN RTL8723BS | Work
+Bluetooth | Broadcom BCM43430 | No Work
 Gyro Sensor | Bosch BMG160 | Work
 
 **Chuwi hi8 Manjaro linux wifi/bt/touchscreen work.**
