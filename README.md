@@ -28,6 +28,7 @@ echo "blacklist silead" | sudo tee /etc/modprobe.d/blacklist-silead.conf
 sudo rmmod silead
 
 **install new driver**
+
 pacman -Syu git make gcc dkms
 
 cd gslx680-acpi-master
