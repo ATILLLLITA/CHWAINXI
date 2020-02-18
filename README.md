@@ -21,10 +21,10 @@ sudo cp silead_ts.fw /lib/firmware/
 ```
 **Broadcom (BT/Wi-Fi) firmware copy.**
 ```
-sudo cp -n /brcmfmac43430a0-sdio.bin /lib/firmware/brcm
-sudo cp -n /brcmfmac43430a0-sdio.Insyde-BayTrail.txt /lib/firmware/brcm
-sudo cp -n /brcmfmac43430a0-sdio.txt /lib/firmware/brcm
-sudo cp -n /BCM4343A0.hcd /lib/firmware/brcm
+sudo cp -n brcmfmac43430a0-sdio.bin /lib/firmware/brcm
+sudo cp -n brcmfmac43430a0-sdio.Insyde-BayTrail.txt /lib/firmware/brcm
+sudo cp -n brcmfmac43430a0-sdio.txt /lib/firmware/brcm
+sudo cp -n BCM4343A0.hcd /lib/firmware/brcm
 ```
 **Kernel module for get touchscreen work install**
 
