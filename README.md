@@ -1,4 +1,13 @@
 # CHWAINXI
+**CHUWI HI8**
+
+Hardware Information |  |
+---|---
+Touchscreen controller | gslx680 | Work
+Audio | Realtek ALC5642 | Work
+WIFI | Broadcom BCM43430 | Work
+Bluetooth | Realtek RGN RTL8723BS | Work
+Gyro Sensor | Bosch BMG160 | Work
 
 **Chuwi hi8 Manjaro linux wifi/bt/touchscreen work.**
 **Clone my git**
