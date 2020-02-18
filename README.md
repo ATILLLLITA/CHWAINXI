@@ -1,8 +1,8 @@
 # CHWAINXI
 **CHUWI HI8**
 
-Hardware Information |  |
----|---
+Hardware Information |  |  |
+---|---|---
 Touchscreen controller | gslx680 | Work
 Audio | Realtek ALC5642 | Work
 WIFI | Broadcom BCM43430 | Work
