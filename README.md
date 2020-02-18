@@ -44,6 +44,7 @@ sudo dkms add gslx680-acpi/$MODULE_VER
 sudo dkms install gslx680-acpi/$MODULE_VER
 
 **check touchscreen**
+
 sudo modprobe gslx680_ts_acpi
 
 **Calibrator for touchscreen install**
